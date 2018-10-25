@@ -18,7 +18,8 @@
              <input id="lunch-menu" type="text"
              placeholder="list comma separated dishes you usually have for lunch"
              class="form-control"
-             ng-model="list" >
+             ng-model="list" 
+             ng-Keyup="clearValue()">
          </div>
          <div class="form-group">
              <button class="btn btn-default"
@@ -26,7 +27,6 @@
              Check If Too Much</button>
          </div>
          <div class="form-group message">
-            {{list}} 
             {{value}}
            <!-- Your message can go here. -->
          </div>
